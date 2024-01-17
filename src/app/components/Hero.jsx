@@ -45,9 +45,11 @@ export default function Hero() {
                     className="herobannerarea__button__2 button-hover"
                     href="#"
                     onClick={(e) => {
-                      e.preventDefault();
-                      const $el = document.querySelector(`.Contact`);
-                      scrollToElement($el);
+                      if (typeof window !== "undefined") {
+                        e.preventDefault();
+                        const $el = document.querySelector(`.Contact`);
+                        scrollToElement($el);
+                      }
                     }}>
                     <span>Mais informações</span>
                     <svg

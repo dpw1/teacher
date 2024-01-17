@@ -2,7 +2,6 @@
 
 import React from "react";
 import logo from "../../../public/images/paty-fortes-logo.png";
-import { scrollToElement } from "../utils";
 import "./Header.scss";
 
 export default function Header() {
