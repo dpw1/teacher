@@ -8,7 +8,7 @@ import bookIcon from "../../../public/images/book-icon.png";
 import woman from "../../../public/images/w2.png";
 import manIcon from "../../../public/images/man-icon.png";
 
-import { Odometer } from "odometer_countup";
+// import { Odometer } from "odometer_countup";
 
 export default function About() {
   const { ref, inView, entry } = useInView({
@@ -27,7 +27,7 @@ export default function About() {
       if (typeof window !== "undefined") {
         const countUpModule = await import("countup.js");
         countUpAnim = new countUpModule.CountUp(countupRef.current, 16, {
-          plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
+          // plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
           duration: 4,
         });
 
