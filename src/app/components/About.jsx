@@ -47,7 +47,7 @@ export default function About() {
     <div className="About" ref={ref}>
       <>
         {/* aboutarea__2__section__start */}
-        <div className="aboutarea__2 sp_top_30">
+        <div className="aboutarea__2 sp_top_90 sp_bottom_90">
           <div className="container">
             <div className="row">
               <div
