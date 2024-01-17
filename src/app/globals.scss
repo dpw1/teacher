@@ -125,5 +125,29 @@ meter {
 }
 
 body {
-  background-color: var(--bodyBg);
+  background: rgb(241, 229, 244);
+  background: radial-gradient(
+    circle,
+    rgba(241, 229, 244, 1) 0%,
+    rgba(250, 249, 251, 1) 0%,
+    rgba(241, 229, 244, 1) 100%
+  );
+}
+
+/*  Edits
+======================*/
+
+.heading__underline span:after {
+  bottom: 2px !important;
+}
+
+.button-hover {
+  &,
+  & * {
+    transition: all var(--transition) ease-out 0s;
+  }
+  &:hover * {
+    transition: all var(--transition) ease-out 0s;
+    color: var(--secondaryColor) !important;
+  }
 }

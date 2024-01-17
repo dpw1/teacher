@@ -75,31 +75,24 @@
     transform: rotate(360deg);
   }
 }
-.About .About-svg-wrapper {
-  width: 31px;
-  height: 33px;
-  line-height: 31px;
-  text-align: center;
-  background: rgba(95, 45, 237, 0.04);
-  color: var(--primaryColor);
-  transition: var(--transition);
-  display: inline-block;
-  margin-right: 15px;
+.Contact {
+  background: rgb(51, 15, 152);
+  background: linear-gradient(34deg, rgb(51, 15, 152) 0%, rgba(46, 10, 147, 0.8660714286) 100%);
 }
-.About .About-svg-wrapper:hover {
-  color: var(--whiteColor);
-  background: var(--primaryColor);
+.Contact * {
+  color: white;
 }
-.About .aboutarea__list__2 svg {
-  width: 15px;
-  height: 15px;
+.Contact:before {
+  background-color: unset;
+  display: none !important;
 }
-.About .About-icon-1 {
-  animation: moveRight 3s ease-in-out infinite alternate;
-  position: absolute;
-  right: 50px;
-  top: 0;
+.Contact .row {
+  display: flex;
 }
-.About .About-icon-2 {
-  margin-left: 0 !important;
+.Contact .Contact-item {
+  display: flex;
+  align-items: center;
+}
+.Contact .Contact-image, .Contact .Contact-image img {
+  width: 50px;
 }

@@ -24,4 +24,15 @@
       height: 15px;
     }
   }
+
+  .About-icon-1 {
+    animation: moveRight 3s ease-in-out infinite alternate;
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+
+  .About-icon-2 {
+    margin-left: 0 !important;
+  }
 }

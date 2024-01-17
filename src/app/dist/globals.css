@@ -58,6 +58,32 @@
   color: black;
 }
 
+/* Animations 
+=========================== */
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+@keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -170,5 +196,20 @@ meter {
 }
 
 body {
-  background-color: var(--bodyBg);
+  background: rgb(241, 229, 244);
+  background: radial-gradient(circle, rgb(241, 229, 244) 0%, rgb(250, 249, 251) 0%, rgb(241, 229, 244) 100%);
+}
+
+/*  Edits
+======================*/
+.heading__underline span:after {
+  bottom: 2px !important;
+}
+
+.button-hover, .button-hover * {
+  transition: all var(--transition) ease-out 0s;
+}
+.button-hover:hover * {
+  transition: all var(--transition) ease-out 0s;
+  color: var(--secondaryColor) !important;
 }

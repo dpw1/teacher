@@ -1,0 +1,33 @@
+@import "./../variables.scss";
+
+.Contact {
+  * {
+    color: $text-color;
+  }
+  background: rgb(51, 15, 152);
+  background: linear-gradient(
+    34deg,
+    rgba(51, 15, 152, 1) 0%,
+    rgba(46, 10, 147, 0.8660714285714286) 100%
+  );
+  &:before {
+    background-color: unset;
+    display: none !important;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .Contact-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .Contact-image {
+    &,
+    & img {
+      width: 50px;
+    }
+  }
+}

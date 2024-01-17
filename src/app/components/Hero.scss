@@ -2,6 +2,14 @@
 
 .Hero {
   overflow: hidden;
+  background: rgb(241, 229, 244);
+  background: radial-gradient(
+    circle,
+    rgba(241, 229, 244, 1) 0%,
+    rgba(250, 249, 251, 1) 0%,
+    rgba(241, 229, 244, 1) 100%
+  );
+
   @property --angle {
     syntax: "<angle>";
     inherits: false;
@@ -20,7 +28,7 @@
   .aboutarea__img {
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 50px 15px #20202054;
+    box-shadow: 0 -20px 200px 103px rgb(6 28 86 / 33%);
     width: 400px;
     height: 400px;
 
@@ -105,32 +113,5 @@
         background: conic-gradient(from 0deg, #{$color}, #{$color}, #{$color});
       }
     }
-  }
-}
-
-@keyframes moveRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(50px);
-  }
-}
-
-@keyframes rotate {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

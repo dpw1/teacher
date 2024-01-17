@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import "./Hero.scss";
 import floater1 from "../../../public/images/herobanner__6.svg";
-import colorfulBG from "../../../public/images/w2.png";
+import woman from "../../../public/images/w2.png";
 
 export default function Hero() {
   return (
@@ -40,7 +40,9 @@ export default function Hero() {
                   <a className="herobannerarea__button__1" href="#">
                     Agendar 1ª Aula Grátis
                   </a>
-                  <a className="herobannerarea__button__2" href="#">
+                  <a
+                    className="herobannerarea__button__2 button-hover"
+                    href="#">
                     <span>Mais informações</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -57,11 +59,7 @@ export default function Hero() {
               data-aos="fade-up">
               <div className="aboutarea__img__inner text-center">
                 <div className="aboutarea__img" data-tilt="">
-                  <img
-                    className="aboutimg__1"
-                    src={colorfulBG.src}
-                    alt="aboutimg"
-                  />
+                  <img className="aboutimg__1" src={woman.src} alt="aboutimg" />
                 </div>
               </div>
             </div>

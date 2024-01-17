@@ -3,6 +3,10 @@
 import React, { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "./About.scss";
+import Image from "next/image";
+import bookIcon from "../../../public/images/book-icon.png";
+import woman from "../../../public/images/w2.png";
+import manIcon from "../../../public/images/man-icon.png";
 
 export default function About() {
   const { ref, inView, entry } = useInView({
@@ -44,7 +48,6 @@ export default function About() {
       <>
         {/* aboutarea__2__section__start */}
         <div className="aboutarea__2 sp_top_30">
-          <h2>{`Header inside viewport ${inView}.`}</h2>
           <div className="container">
             <div className="row">
               <div
@@ -53,24 +56,16 @@ export default function About() {
                 <div className="about__right__wraper__2">
                   <div className="educationarea__img" data-tilt="">
                     <img
-                      className="aboutarea__2__img__1"
-                      src="img/about/about_2.png"
-                      alt="education"
+                      loading="lazy"
+                      className="About-icon-1 aboutarea__2__img__1"
+                      alt="Lightbulb icon"
+                      src={bookIcon.src}
                     />
                     <img
-                      className="aboutarea__2__img__2"
-                      src="img/about/about_3.png"
-                      alt="education"
-                    />
-                    <img
-                      className="aboutarea__2__img__3"
-                      src="img/about/about_4.png"
-                      alt="education"
-                    />
-                    <img
-                      className="aboutarea__2__img__4"
-                      src="img/about/about_11.png"
-                      alt="education"
+                      loading="lazy"
+                      className="About-icon-2 aboutarea__2__img__1"
+                      alt="Professora patrícia fortes"
+                      src={manIcon.src}
                     />
                   </div>
                   <div className="aboutarea__2__text">
