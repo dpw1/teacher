@@ -123,3 +123,7 @@ meter {
 ::-webkit-details-marker {
   display: none;
 }
+
+body {
+  background-color: var(--bodyBg);
+}

@@ -13983,4 +13983,9 @@ Dark Mode
 
 .is_dark .dashboard__table table thead {
   background: var(--whiteColor);
+} 
+/* Edits
+============================ */
+.heading__underline span:after {
+  bottom: 2px !important;
 }

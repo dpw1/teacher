@@ -1,0 +1,27 @@
+@import "./../variables.scss";
+
+.About {
+  .About-svg-wrapper {
+    width: 31px;
+    height: 33px;
+    line-height: 31px;
+    text-align: center;
+    background: rgba(95, 45, 237, 0.04);
+    color: var(--primaryColor);
+    transition: var(--transition);
+    display: inline-block;
+    margin-right: 15px;
+
+    &:hover {
+      color: var(--whiteColor);
+      background: var(--primaryColor);
+    }
+  }
+
+  .aboutarea__list__2 {
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

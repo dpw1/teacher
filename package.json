@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "countup.js": "^2.8.0",
     "next": "14.0.4",
+    "odometer_countup": "^1.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.5.3"
   },
   "devDependencies": {
     "eslint": "^8",

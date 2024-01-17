@@ -1,0 +1,70 @@
+/* Colors */
+/* Font sizes */
+/* Media query */
+/* Helper classes */
+.text-h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+@media (max-width: 749px) {
+  .text-h1 {
+    font-size: 72px;
+  }
+}
+
+.text-h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (max-width: 749px) {
+  .text-h3 {
+    font-size: 16px;
+  }
+}
+
+.text-p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+@media (max-width: 749px) {
+  .text-p {
+    font-size: 13px;
+  }
+}
+
+.text-h6 {
+  font-size: 11px;
+}
+@media (max-width: 749px) {
+  .text-h6 {
+    font-size: 13px;
+  }
+}
+
+.text-color {
+  color: white;
+}
+
+.text-color--secondary {
+  color: black;
+}
+
+.About .About-svg-wrapper {
+  width: 31px;
+  height: 33px;
+  line-height: 31px;
+  text-align: center;
+  background: rgba(95, 45, 237, 0.04);
+  color: var(--primaryColor);
+  transition: var(--transition);
+  display: inline-block;
+  margin-right: 15px;
+}
+.About .About-svg-wrapper:hover {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+}
+.About .aboutarea__list__2 svg {
+  width: 15px;
+  height: 15px;
+}

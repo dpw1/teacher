@@ -12715,3 +12715,10 @@ Dark Mode
 .is_dark .dashboard__table table thead {
   background: var(--whiteColor);
 }/*# sourceMappingURL=style.css.map */
+
+/* Edits
+============================ */
+
+.heading__underline span:after{
+  bottom: 2px !important
+}

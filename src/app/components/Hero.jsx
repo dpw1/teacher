@@ -32,13 +32,13 @@ export default function Hero() {
                 </div>
                 <div className="herobannerarea__text">
                   <p>
-                    Auxílio pedagógico para estudantes brasileiros vivendo em
-                    Portugal.
+                    Auxílio pedagógico para estudantes brasileiros adaptarem-se
+                    ao sistema de ensino português.
                   </p>
                 </div>
                 <div className="hreobannerarea__button">
                   <a className="herobannerarea__button__1" href="#">
-                    Agendar Aula Grátis
+                    Agendar 1ª Aula Grátis
                   </a>
                   <a className="herobannerarea__button__2" href="#">
                     <span>Mais informações</span>
