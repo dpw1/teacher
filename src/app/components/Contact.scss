@@ -20,14 +20,27 @@
   }
   .Contact-items {
     margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+    }
   }
 
   .Contact-item {
     display: flex;
     align-items: center;
+
+    & + .Contact-item {
+      @media (max-width: $xs) {
+        margin-top: 20px;
+      }
+    }
   }
 
   .Contact-image {
+    margin-right: 10px;
     &,
     & img {
       width: 50px;

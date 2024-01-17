@@ -8,7 +8,7 @@
 }
 @media (max-width: 749px) {
   .text-h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -91,10 +91,25 @@
 }
 .Contact .Contact-items {
   margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 749px) {
+  .Contact .Contact-items {
+    flex-direction: column;
+  }
 }
 .Contact .Contact-item {
   display: flex;
   align-items: center;
+}
+@media (max-width: 749px) {
+  .Contact .Contact-item + .Contact-item {
+    margin-top: 20px;
+  }
+}
+.Contact .Contact-image {
+  margin-right: 10px;
 }
 .Contact .Contact-image, .Contact .Contact-image img {
   width: 50px;

@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import "./Hero.scss";
 import floater1 from "../../../public/images/herobanner__6.svg";
 import woman from "../../../public/images/w2.png";
+import { scrollToElement } from "../utils";
 
 export default function Hero() {
   return (
@@ -42,7 +43,12 @@ export default function Hero() {
                   </a>
                   <a
                     className="herobannerarea__button__2 button-hover"
-                    href="#">
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const $el = document.querySelector(`.Contact`);
+                      scrollToElement($el);
+                    }}>
                     <span>Mais informações</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

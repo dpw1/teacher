@@ -8,7 +8,7 @@
 }
 @media (max-width: 749px) {
   .text-h1 {
-    font-size: 72px;
+    font-size: 40px;
   }
 }
 
@@ -78,4 +78,8 @@
 .Footer {
   background: #ededed;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.Footer svg {
+  width: 20px;
+  height: 20px;
 }

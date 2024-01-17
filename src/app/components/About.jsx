@@ -8,6 +8,8 @@ import bookIcon from "../../../public/images/book-icon.png";
 import woman from "../../../public/images/w2.png";
 import manIcon from "../../../public/images/man-icon.png";
 
+import { Odometer } from "odometer_countup";
+
 export default function About() {
   const { ref, inView, entry } = useInView({
     /* Optional options */
@@ -23,8 +25,9 @@ export default function About() {
   useEffect(() => {
     (async () => {
       const countUpModule = await import("countup.js");
-      countUpAnim = new countUpModule.CountUp(countupRef.current, 15, {
-        duration: 5,
+      countUpAnim = new countUpModule.CountUp(countupRef.current, 16, {
+        plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
+        duration: 4,
       });
 
       if (inView) {
@@ -71,7 +74,7 @@ export default function About() {
                   <div className="aboutarea__2__text">
                     <div className="aboutarea__counter">
                       <span ref={countupRef} className="counter ">
-                        15
+                        16
                       </span>{" "}
                       +
                     </div>
@@ -95,11 +98,7 @@ export default function About() {
                     </h2>
                   </div>
                   <div className="aboutarea__para aboutarea__para__2">
-                    <p>
-                      25+Contrary to popular belief, Lorem Ipsum is not simply
-                      random text roots in a piece of classical Latin literature
-                      from 45 BC
-                    </p>
+                    <p>Agende uma consulta se seu filho apresentar:</p>
                   </div>
                   <div className="aboutarea__list__2">
                     <ul>
@@ -112,7 +111,7 @@ export default function About() {
                             <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                           </svg>
                         </span>{" "}
-                        <span>Lorem Ipsum is simply dummy</span>
+                        <span>Falta de atenção</span>
                       </li>
                       <li>
                         <span className="About-svg-wrapper">
@@ -123,9 +122,7 @@ export default function About() {
                             <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                           </svg>
                         </span>{" "}
-                        <span>
-                          Explore a variety of fresh educational teach
-                        </span>
+                        <span>Baixo desempenho escolar</span>
                       </li>
                       <li>
                         <span className="About-svg-wrapper">
@@ -136,7 +133,18 @@ export default function About() {
                             <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                           </svg>
                         </span>{" "}
-                        <span>Lorem Ipsum is simply dummy text of</span>
+                        <span>Dificuldade de leitura e escrita</span>
+                      </li>
+                      <li>
+                        <span className="About-svg-wrapper">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
+                          </svg>
+                        </span>{" "}
+                        <span>Alfabetização lenta</span>
                       </li>
                     </ul>
                   </div>
