@@ -24,27 +24,21 @@ export default function About() {
 
   useEffect(() => {
     (async () => {
-      const countUpModule = await import("countup.js");
-      countUpAnim = new countUpModule.CountUp(countupRef.current, 16, {
-        plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
-        duration: 4,
-      });
+      if (typeof window !== "undefined") {
+        const countUpModule = await import("countup.js");
+        countUpAnim = new countUpModule.CountUp(countupRef.current, 16, {
+          plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
+          duration: 4,
+        });
 
-      if (inView) {
-        countUpAnim.start();
-      } else {
-        countUpAnim.reset();
+        if (inView) {
+          countUpAnim.start();
+        } else {
+          countUpAnim.reset();
+        }
       }
     })();
   }, [inView]);
-
-  async function initCountUp() {
-    if (!countUpAnim.error) {
-      countUpAnim.start();
-    } else {
-      console.error(countUpAnim.error);
-    }
-  }
 
   return (
     <div className="About" ref={ref}>
