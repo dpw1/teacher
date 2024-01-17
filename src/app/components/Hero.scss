@@ -1,0 +1,136 @@
+@import "./../variables.scss";
+
+.Hero {
+  overflow: hidden;
+  @property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+
+  .aboutarea__img__inner {
+    display: flex;
+    justify-content: end;
+  }
+
+  * {
+    color: $text-color;
+  }
+
+  .aboutarea__img {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 50px 15px #20202054;
+    width: 400px;
+    height: 400px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .herobannerarea__button__2 {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+    }
+  }
+
+  .Hero-icon {
+    margin: auto;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    overflow: hidden;
+    // pointer-events: none;
+    filter: drop-shadow(0 0 5px hsl(162, 100%, 58%))
+      drop-shadow(0 0 10px hsl(270, 73%, 53%));
+
+    .Hero-icon-triangle {
+      clip-path: polygon(0 100%, 100% 100%, 50% 0);
+      mask: linear-gradient(117deg, #000 55%, transparent 55%, transparent),
+        linear-gradient(-117deg, #000 55%, transparent 55%, transparent),
+        linear-gradient(#000, #000);
+      mask-position: 0 0, 130px 0, 0 250px;
+      mask-size: 130px 250px, 130px 250px, 100% 10px;
+      mask-repeat: no-repeat;
+      position: relative;
+      width: 260px;
+      height: 260px;
+      background: conic-gradient(
+        from 0deg,
+        hsl(162, 100%, 58%),
+        hsl(270, 73%, 53%),
+        hsl(162, 100%, 58%)
+      );
+      transform: scale(0.1) rotate(25deg);
+    }
+
+    /* positions */
+
+    &.Hero-icon--1 {
+      animation: moveRight 2s ease-in-out infinite alternate;
+      top: -50px;
+      left: -100px;
+    }
+
+    &.Hero-icon--2 {
+      bottom: -100px;
+      right: 100px;
+      animation: rotate 5s linear infinite;
+
+      $color: hsl(52, 69%, 49%);
+      filter: drop-shadow(0 0 5px #{$color}) drop-shadow(0 0 10px #{$color});
+
+      .Hero-icon-triangle {
+        transform: scale(0.1) rotate(75deg);
+        background: conic-gradient(from 0deg, #{$color}, #{$color}, #{$color});
+      }
+    }
+
+    &.Hero-icon--3 {
+      bottom: 0;
+      right: 25vw;
+      animation: moveRight 5s ease-in-out infinite alternate;
+
+      $color: hsl(125, 79%, 59%);
+
+      filter: drop-shadow(0 0 5px #{$color}), drop-shadow(0 0 10px #{$color});
+
+      .Hero-icon-triangle {
+        transform: scale(0.08) rotate(9deg);
+        background: conic-gradient(from 0deg, #{$color}, #{$color}, #{$color});
+      }
+    }
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

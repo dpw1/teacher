@@ -3,5 +3,4 @@ const nextConfig = {
   output: "export",
 };
 
-/* Nice */
 module.exports = nextConfig;

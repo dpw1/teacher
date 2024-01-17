@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import Hero from "../components/Hero";
+
+import Hero from "./components/Hero";
 import "./bootstrap.scss";
 import "./legacy_css.scss";
 
