@@ -8,7 +8,7 @@
 }
 @media (max-width: 749px) {
   .text-h1 {
-    font-size: 30px;
+    font-size: 72px;
   }
 }
 
@@ -75,30 +75,7 @@
     transform: rotate(360deg);
   }
 }
-.Contact {
-  background: rgb(51, 15, 152);
-  background: linear-gradient(34deg, rgb(19, 5, 57) 0%, rgba(19, 3, 60, 0.866) 100%);
-}
-.Contact * {
-  color: white;
-}
-.Contact:before {
-  background-color: unset;
-  display: none !important;
-}
-.Contact .row {
-  display: flex;
-}
-.Contact .Contact-items {
-  margin-top: 40px;
-}
-.Contact .Contact-item {
-  display: flex;
-  align-items: center;
-}
-.Contact .Contact-image, .Contact .Contact-image img {
-  width: 50px;
-}
-.Contact .Contact-bottom {
-  margin-top: 0px;
+.Footer {
+  background: #ededed;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }

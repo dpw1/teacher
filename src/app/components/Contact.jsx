@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="container">
         <div className="row">
           <div
-            className="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12"
+            className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
             data-aos="fade-up">
             <div className="registerarea__wraper">
               <div className="section__title registerarea__section__title">
@@ -22,12 +22,22 @@ export default function Contact() {
                   <h2>
                     Para esclarecer dúvidas, envie um mensagem no{" "}
                     <span>
-                      <small>whatsapp</small>
+                      <a href="#">
+                        <small>Whatsapp</small>
+                      </a>
+                    </span>
+                    ,{" "}
+                    <span>
+                      <a href="#">
+                        <small>Instagram</small>
+                      </a>
                     </span>{" "}
                     ou{" "}
                     <span>
-                      <small>Instagram</small>
-                    </span>{" "}
+                      <a href="#">
+                        <small>e-mail</small>
+                      </a>
+                    </span>
                     .
                   </h2>
                 </div>
@@ -47,7 +57,7 @@ export default function Contact() {
           </div>
 
           <div
-            className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12"
+            className="Contact-bottom col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
             data-aos="fade-up">
             <div className="registerarea__wraper">
               <div className="Contact-items">

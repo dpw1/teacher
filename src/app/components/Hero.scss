@@ -16,13 +16,56 @@
     initial-value: 0deg;
   }
 
+  .herobannerarea {
+    @media (max-width: $xs) {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+  }
+
+  * {
+    @media (max-width: $xs) {
+      text-align: center;
+    }
+  }
+
+  .herobannerarea__box {
+    @media (max-width: $xs) {
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 0;
+    }
+  }
+
   .aboutarea__img__inner {
     display: flex;
     justify-content: end;
+
+    @media (max-width: $xs) {
+      margin-top: 20px;
+      justify-content: center;
+    }
   }
 
   * {
     color: $text-color;
+  }
+
+  .hreobannerarea__button {
+    @media (max-width: $xs) {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: 40px;
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 
   .aboutarea__img {
@@ -31,9 +74,21 @@
     box-shadow: 0 -20px 200px 103px rgb(6 28 86 / 33%);
     width: 400px;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
       object-fit: contain;
+
+      @media (max-width: $xs) {
+        display: block;
+      }
+    }
+
+    @media (max-width: $xs) {
+      width: 300px;
+      height: 300px;
     }
   }
 

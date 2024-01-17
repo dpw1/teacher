@@ -1,0 +1,37 @@
+@import "./../variables.scss";
+
+.Header {
+  background: #ededed;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: $md) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .Header-mobile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .col-6 {
+      @media (max-width: $xs) {
+        width: 100%;
+      }
+    }
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      @media (max-width: $xs) {
+        max-width: 250px;
+      }
+    }
+  }
+}

@@ -7,8 +7,8 @@
   background: rgb(51, 15, 152);
   background: linear-gradient(
     34deg,
-    rgba(51, 15, 152, 1) 0%,
-    rgba(46, 10, 147, 0.8660714285714286) 100%
+    rgb(19, 5, 57) 0%,
+    rgba(19, 3, 60, 0.866) 100%
   );
   &:before {
     background-color: unset;
@@ -17,6 +17,9 @@
 
   .row {
     display: flex;
+  }
+  .Contact-items {
+    margin-top: 40px;
   }
 
   .Contact-item {
@@ -29,5 +32,9 @@
     & img {
       width: 50px;
     }
+  }
+
+  .Contact-bottom {
+    margin-top: 0px;
   }
 }
