@@ -3,7 +3,8 @@
 import React, { useEffect } from "react";
 import "./Hero.scss";
 import floater1 from "../../../public/images/herobanner__6.svg";
-import woman from "../../../public/images/w2.png";
+// import woman from "../../../public/images/w2.png";
+import woman from "../../../public/images/main-1.png";
 import { scrollToElement } from "../utils";
 
 export default function Hero() {
@@ -27,14 +28,14 @@ export default function Hero() {
                   </div>
                   <div className="herobannerarea__title__headding__2">
                     <h2 className="herobannerarea__title text-h1">
-                      Psicopedagoga brasileira em Portugal
+                      Psicopedagoga especialista em TDAH
                     </h2>
                   </div>
                 </div>
                 <div className="herobannerarea__text">
                   <p>
-                    Auxílio pedagógico para estudantes brasileiros adaptarem-se
-                    ao sistema de ensino português.
+                    Especialista em TDAH e alfabetização com mais de 16 anos de
+                    experiência internacional.
                   </p>
                 </div>
                 <div className="hreobannerarea__button">

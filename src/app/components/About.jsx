@@ -7,6 +7,8 @@ import Image from "next/image";
 import bookIcon from "../../../public/images/book-icon.png";
 import woman from "../../../public/images/w2.png";
 import manIcon from "../../../public/images/man-icon.png";
+import child from "../../../public/images/child.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // import { Odometer } from "odometer_countup";
 
@@ -17,8 +19,6 @@ export default function About() {
   });
   const countupRef = useRef(null);
   let countUpAnim;
-
-  // useEffect with empty dependency array runs once when component is mounted
 
   useEffect(() => {}, []);
 
@@ -58,12 +58,7 @@ export default function About() {
                       alt="Lightbulb icon"
                       src={bookIcon.src}
                     />
-                    <img
-                      loading="lazy"
-                      className="About-icon-2 aboutarea__2__img__1"
-                      alt="Professora patrícia fortes"
-                      src={manIcon.src}
-                    />
+                    <LazyLoadImage src={child.src}></LazyLoadImage>
                   </div>
                   <div className="aboutarea__2__text">
                     <div className="aboutarea__counter">
@@ -105,7 +100,7 @@ export default function About() {
                             <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                           </svg>
                         </span>{" "}
-                        <span>Falta de atenção</span>
+                        <span>Falta de atenção;</span>
                       </li>
                       <li>
                         <span className="About-svg-wrapper">
@@ -116,7 +111,7 @@ export default function About() {
                             <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                           </svg>
                         </span>{" "}
-                        <span>Baixo desempenho escolar</span>
+                        <span>Baixo desempenho escolar;</span>
                       </li>
                       <li>
                         <span className="About-svg-wrapper">
@@ -127,7 +122,7 @@ export default function About() {
                             <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                           </svg>
                         </span>{" "}
-                        <span>Dificuldade de leitura e escrita</span>
+                        <span>Dificuldade de leitura e escrita;</span>
                       </li>
                       <li>
                         <span className="About-svg-wrapper">
@@ -138,7 +133,7 @@ export default function About() {
                             <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z" />
                           </svg>
                         </span>{" "}
-                        <span>Alfabetização lenta</span>
+                        <span>Alfabetização lenta;</span>
                       </li>
                     </ul>
                   </div>

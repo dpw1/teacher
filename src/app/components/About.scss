@@ -35,4 +35,10 @@
   .About-icon-2 {
     margin-left: 0 !important;
   }
+
+  .aboutarea__2__text {
+    @media (min-width: $xs) {
+      bottom: 80px;
+    }
+  }
 }

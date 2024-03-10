@@ -8,7 +8,7 @@
 }
 @media (max-width: 749px) {
   .text-h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -109,6 +109,11 @@
   display: flex;
   justify-content: end;
 }
+@media (min-width: 991px) {
+  .Hero .aboutarea__img__inner {
+    transform: scale(0.9);
+  }
+}
 @media (max-width: 749px) {
   .Hero .aboutarea__img__inner {
     margin-top: 20px;
@@ -144,7 +149,8 @@
   justify-content: center;
 }
 .Hero .aboutarea__img img {
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 0 -90px;
 }
 @media (max-width: 749px) {
   .Hero .aboutarea__img img {

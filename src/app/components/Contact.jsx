@@ -47,8 +47,8 @@ export default function Contact() {
                   <div className="video__pop__btn"></div>
                   <div className="registerarea__para">
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis autem vitae labore cumque sunt a.
+                      Não hesite em entrar em contato para agendar uma consulta
+                      ou esclarecer quaisquer dúvidas.
                     </p>
                   </div>
                 </div>

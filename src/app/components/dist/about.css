@@ -8,7 +8,7 @@
 }
 @media (max-width: 749px) {
   .text-h1 {
-    font-size: 72px;
+    font-size: 40px;
   }
 }
 
@@ -102,4 +102,9 @@
 }
 .About .About-icon-2 {
   margin-left: 0 !important;
+}
+@media (min-width: 749px) {
+  .About .aboutarea__2__text {
+    bottom: 80px;
+  }
 }
