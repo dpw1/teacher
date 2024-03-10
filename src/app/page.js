@@ -8,15 +8,15 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Reviews from "./components/Reviews";
-import { NextSeo } from "next-seo";
+// import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <main>
-      <NextSeo
+      {/* <NextSeo
         title="Psicopedagoga Patrícia Fortes"
         description="Auxílio pedagógico para estudantes brasileiros adaptarem-se ao sistema de ensino português."
-      />
+      /> */}
       <Header></Header>
       <Hero></Hero>
       <About></About>
