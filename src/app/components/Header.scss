@@ -7,6 +7,10 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
+  .headerarea__2 .row {
+    justify-content: center;
+  }
+
   @media (min-width: $md) {
     padding-left: 60px;
     padding-right: 60px;

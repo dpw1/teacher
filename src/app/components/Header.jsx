@@ -21,9 +21,9 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-7 main_menu_wrap">
+              {/* <div className="col-xl-7 col-lg-7 main_menu_wrap">
                 <div className="headerarea__main__menu">
-                  {/* <nav>
+                   <nav>
                     <ul>
                       <li className="mega__menu position-static">
                         <a
@@ -47,9 +47,9 @@ export default function Header() {
                         </a>
                       </li>
                     </ul>
-                  </nav> */}
+                  </nav> 
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="container-fluid mob_menu_wrapper">

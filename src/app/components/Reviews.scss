@@ -1,0 +1,41 @@
+@import "./../variables.scss";
+
+.Reviews {
+  h2 {
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  .Reviews-images {
+    .slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    figure {
+    }
+    img {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+  }
+
+  h2 {
+    margin: 40px;
+  }
+
+  .carousel-status {
+    display: none;
+  }
+
+  .dot {
+    background: #27194c !important;
+    box-shadow: unset !important;
+    width: 12px !important  ;
+    height: 12px !important ;
+  }
+}

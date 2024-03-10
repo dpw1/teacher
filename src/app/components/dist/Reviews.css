@@ -75,38 +75,31 @@
     transform: rotate(360deg);
   }
 }
-.Header {
-  background: #ededed;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.Reviews h2 {
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
 }
-.Header .headerarea__2 .row {
-  justify-content: center;
-}
-@media (min-width: 991px) {
-  .Header {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-.Header .Header-mobile-wrapper {
+.Reviews .Reviews-images .slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 749px) {
-  .Header .Header-mobile-wrapper .col-6 {
-    width: 100%;
-  }
+.Reviews .Reviews-images img {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
-.Header .mobile-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Reviews h2 {
+  margin: 40px;
 }
-@media (max-width: 749px) {
-  .Header .mobile-logo img {
-    max-width: 250px;
-  }
+.Reviews .carousel-status {
+  display: none;
+}
+.Reviews .dot {
+  background: #27194c !important;
+  box-shadow: unset !important;
+  width: 12px !important;
+  height: 12px !important;
 }

@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Header></Header>
       <Hero></Hero>
       <About></About>
+      <Reviews></Reviews>
+
       <Contact></Contact>
       <Footer></Footer>
     </main>
